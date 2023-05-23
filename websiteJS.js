@@ -7,13 +7,12 @@ function openMyselfTab(evt, stages) {
     var i, tabcontent, tablinks;
   
     // Get all elements with class="tabcontent"+"Tabs_HeaderContent" and hide them
-    /*
     tabcontent = document.getElementsByClassName("tabcontent");
     Tabs_HeaderContent= document.getElementsByClassName("Tabs_HeaderContent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
       Tabs_HeaderContent[i].style.display = "none"
-    }*/
+    }
   
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
