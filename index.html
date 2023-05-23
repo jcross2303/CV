@@ -17,14 +17,32 @@
           <a href="#about">About Me</a>
         </div>
     </div>
+    
     <!-- 關於我的tabs -->
     <div class="tabs">
         <p class="tabsTitle">求學歷程</p>
-        <div class="tabheader">
+
+        <!--Tabs Header內容 -->
+        <div id="H_High School" class="Tabs_HeaderContent">
+            <h1>High School</h1>
+            <p>高中的成長歷程</p>
         </div>
+        <div id="H_College" class="Tabs_HeaderContent">
+            <h1>College</h1>
+            <p>大學的環境及成長</p>
+        </div>
+        <div id="H_Masters" class="Tabs_HeaderContent">
+            <h1>Masters</h1>
+            <p>碩班的進修環境</p>
+        </div>
+
+        <!--按鈕本身-->
         <button class="tablinks" onclick="openMyselfTab(event, 'High School')">High School</button>
         <button class="tablinks" onclick="openMyselfTab(event, 'College')">College</button>
-        <button class="tablinks" onclick="openMyselfTab(event, 'Masters')">Masters</button>
+        <button class="tablinks" onclick="openMyselfTab(event, 'Masters')" id="defaultOpen">Masters</button>
+    </div>
+    
+        
     </div>
     <!--Tabs內容 -->
     <div id="High School" class="tabcontent">
@@ -40,3 +58,7 @@
         <p>Some stuff</p>
     </div>
 </body>
+<script>
+    document.getElementById("defaultOpen").click();
+</script>
+</html>

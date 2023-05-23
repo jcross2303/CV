@@ -52,7 +52,8 @@
       float: none;
     }
   }
-  /*About Myself部分。
+
+/*About Myself部分。
 /* Style the tab */
 .tabs {
   overflow: hidden;
@@ -93,4 +94,13 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+/*Tablink headers*/
+
+.Tabs_HeaderContent {
+  color: black;
+  display: none;
+  padding: 50px;
+  text-align: center;
 }
