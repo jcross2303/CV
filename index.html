@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <!--script type="module"先在這邊弄掉 -->
     <script src="websiteJS.js"></script>
     <title>
         江仲偉的網站
@@ -9,34 +10,33 @@
 <body>
     <!-- 工具列 -->
     <div class="header">
-        <a href="#default" class="logo">My Pic</a>
+        <a href="Myself.jpg" class="logo">John Jiang</a>
         <div class="header-right">
-          <a class="active" href="#home" >Home</a>
+          <a class="active" href="#home" >求學歷程</a>
           <a href="#contact" onclick="alertCall()">Contact</a>
-          <a href="#about">About</a>
+          <a href="#about">About Me</a>
         </div>
     </div>
-    <!-- 放入一個簡單的form -->
-    <body>
-        <div class="form">
-         <form method="POST" action="form.php">
-           <p>
-           <label for="fname">First Name </label>
-           <input type="text" name="fname" id="fname">
-           </p>
-           <p>
-           <label for="lname">Last Name </label>
-           <input type="text" name="lname" id="lname">
-           </p>
-           <p>
-           <label for="email">Email</label>
-           <input type="text" name="email" id="email">
-           </p>
-           <p>
-           <input type="submit" name="submit" id="submit" value="Submit">
-           </p>
-         </form>
-      </body>
-      <!-- 試試連線的button -->
-      <button onclick="connect()">connect</button>
+    <!-- 關於我的tabs -->
+    <div class="tabs">
+        <p class="tabsTitle">求學歷程</p>
+        <div class="tabheader">
+        </div>
+        <button class="tablinks" onclick="openMyselfTab(event, 'High School')">High School</button>
+        <button class="tablinks" onclick="openMyselfTab(event, 'College')">College</button>
+        <button class="tablinks" onclick="openMyselfTab(event, 'Masters')">Masters</button>
+    </div>
+    <!--Tabs內容 -->
+    <div id="High School" class="tabcontent">
+        <h3>High School</h3>
+        <p>Some stuff</p>
+    </div>
+    <div id="College" class="tabcontent">
+        <h3>College</h3>
+        <p>Some stuff</p>
+    </div>
+    <div id="Masters" class="tabcontent">
+        <h3>Masters</h3>
+        <p>Some stuff</p>
+    </div>
 </body>
